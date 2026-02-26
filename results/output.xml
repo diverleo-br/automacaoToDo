@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-26T08:38:52.154446" rpa="false" schemaversion="5">
+<suite id="s1" name="DesafioLinx" source="c:\Users\diver\Desktop\CursoQA\DesafioLinx">
+<suite id="s1-s1" name="Testes" source="c:\Users\diver\Desktop\CursoQA\DesafioLinx\testes.robot">
+<test id="s1-s1-t1" name="Cenário 03 acessar o site do To-do adicionar 4 atividades completar a atividade 4 e limpar as atividades concluidas" line="26">
+<kw name="Dado que eu acesse o To-Do">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-26T08:38:52.379211" level="INFO">Opening browser 'Chrome' to base url 'https://todomvc.com/examples/react/dist/'.</msg>
+<arg>url=https://todomvc.com/examples/react/dist/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-26T08:38:52.378888" elapsed="1.062109"/>
+</kw>
+<status status="PASS" start="2026-02-26T08:38:52.378204" elapsed="1.063160"/>
+</kw>
+<kw name="E adicione quatro atividades">
+<for flavor="IN">
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T08:38:53.448180" level="INFO">Typing text 'Fazer Compras' into text field 'id:todo-input'.</msg>
+<arg>${campoToDo}</arg>
+<arg>${itens}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T08:38:53.446863" elapsed="0.092685"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-02-26T08:38:53.540245" level="INFO">Sending key(s) ('ENTER',) to id:todo-input element.</msg>
+<msg time="2026-02-26T08:38:53.841301" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2026-02-26T08:38:53.841618" level="INFO">Releasing special key ENTER.</msg>
+<arg>${campoToDo}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-02-26T08:38:53.539750" elapsed="0.318176"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-26T08:38:56.859183" level="INFO">Slept 3 seconds.</msg>
+<arg>3S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-26T08:38:53.858113" elapsed="3.002111"/>
+</kw>
+<var name="${itens}">Fazer Compras</var>
+<status status="PASS" start="2026-02-26T08:38:53.446175" elapsed="3.414486"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T08:38:56.863678" level="INFO">Typing text 'Colocar Gasolina' into text field 'id:todo-input'.</msg>
+<arg>${campoToDo}</arg>
+<arg>${itens}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T08:38:56.862354" elapsed="0.076619"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-02-26T08:38:56.939640" level="INFO">Sending key(s) ('ENTER',) to id:todo-input element.</msg>
+<msg time="2026-02-26T08:38:57.220636" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2026-02-26T08:38:57.221135" level="INFO">Releasing special key ENTER.</msg>
+<arg>${campoToDo}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-02-26T08:38:56.939171" elapsed="0.299316"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-26T08:39:00.239971" level="INFO">Slept 3 seconds.</msg>
+<arg>3S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-26T08:38:57.238861" elapsed="3.002221"/>
+</kw>
+<var name="${itens}">Colocar Gasolina</var>
+<status status="PASS" start="2026-02-26T08:38:56.861219" elapsed="3.380285"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T08:39:00.244169" level="INFO">Typing text 'Lavar o Carro' into text field 'id:todo-input'.</msg>
+<arg>${campoToDo}</arg>
+<arg>${itens}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T08:39:00.243063" elapsed="0.077404"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-02-26T08:39:00.321145" level="INFO">Sending key(s) ('ENTER',) to id:todo-input element.</msg>
+<msg time="2026-02-26T08:39:00.612856" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2026-02-26T08:39:00.613213" level="INFO">Releasing special key ENTER.</msg>
+<arg>${campoToDo}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-02-26T08:39:00.320651" elapsed="0.307345"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-26T08:39:03.629639" level="INFO">Slept 3 seconds.</msg>
+<arg>3S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-26T08:39:00.628329" elapsed="3.004163"/>
+</kw>
+<var name="${itens}">Lavar o Carro</var>
+<status status="PASS" start="2026-02-26T08:39:00.242092" elapsed="3.390845"/>
+</iter>
+<iter>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T08:39:03.637787" level="INFO">Typing text 'Jogar PS5' into text field 'id:todo-input'.</msg>
+<arg>${campoToDo}</arg>
+<arg>${itens}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T08:39:03.636435" elapsed="0.051592"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-02-26T08:39:03.689107" level="INFO">Sending key(s) ('ENTER',) to id:todo-input element.</msg>
+<msg time="2026-02-26T08:39:03.963099" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2026-02-26T08:39:03.963441" level="INFO">Releasing special key ENTER.</msg>
+<arg>${campoToDo}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-02-26T08:39:03.688199" elapsed="0.288515"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-26T08:39:06.978639" level="INFO">Slept 3 seconds.</msg>
+<arg>3S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-26T08:39:03.976894" elapsed="3.003612"/>
+</kw>
+<var name="${itens}">Jogar PS5</var>
+<status status="PASS" start="2026-02-26T08:39:03.633417" elapsed="3.347815"/>
+</iter>
+<var>${itens}</var>
+<value>@{lista4Itens}</value>
+<status status="PASS" start="2026-02-26T08:38:53.444679" elapsed="13.536820"/>
+</for>
+<status status="PASS" start="2026-02-26T08:38:53.443208" elapsed="13.538643"/>
+</kw>
+<kw name="E conclua a quarta atividade">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-02-26T08:39:06.988888" level="INFO">Selecting checkbox 'xpath=/html/body/section/main/ul/li[4]/div/input'.</msg>
+<arg>xpath=/html/body/section/main/ul/li[4]/div/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T08:39:06.988247" elapsed="0.102913"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-26T08:39:12.093280" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-26T08:39:07.091611" elapsed="5.002192"/>
+</kw>
+<status status="PASS" start="2026-02-26T08:39:06.987372" elapsed="5.106728"/>
+</kw>
+<kw name="Então limpe as atividades concluidas">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-02-26T08:39:12.095996" level="INFO">Clicking button 'xpath=/html/body/section/footer/button'.</msg>
+<arg>xpath=/html/body/section/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T08:39:12.095610" elapsed="0.082235"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-26T08:39:17.178964" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-26T08:39:12.178137" elapsed="5.002601"/>
+</kw>
+<status status="PASS" start="2026-02-26T08:39:12.095090" elapsed="5.086194"/>
+</kw>
+<status status="PASS" start="2026-02-26T08:38:52.375514" elapsed="24.806379"/>
+</test>
+<status status="PASS" start="2026-02-26T08:38:52.186787" elapsed="25.004877"/>
+</suite>
+<status status="PASS" start="2026-02-26T08:38:52.158492" elapsed="25.050092"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="DesafioLinx" id="s1" pass="1" fail="0" skip="0">DesafioLinx</stat>
+<stat name="Testes" id="s1-s1" pass="1" fail="0" skip="0">DesafioLinx.Testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
